@@ -53,8 +53,7 @@ class AbstractWrapper(object):
         root.handlers = [ch]
         self.logger = logging.getLogger("GenericWrapper")
 
-        self.RESULT_MAPPING = {"SAT": "SUCCESS",
-                               "UNSAT": "SUCCESS"}
+        self.RESULT_MAPPING = {}
         self._watcher_file = None
         self._solver_file = None
 
